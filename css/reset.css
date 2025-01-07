@@ -1,0 +1,8 @@
+@charset "utf-8";
+*{margin:0; padding:0;}
+ul,ol,li{list-style:none;}
+a{text-decoration:none; color:inherit;}
+/* 작성할 때 자주 사용하는 스타일을 따로 지정한것으로 무조건 작성해야하는 내용은 아님!*/
+button{cursor:pointer;}
+input,button{box-sizing:border-box;}
+input:focus{outline:none;}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+ <link rel="stylesheet" href="./css/reset.css">
+ <link rel="stylesheet" href="./css/style.css">
+ <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+ <script src="https://kit.fontawesome.com/4dc87784b3.js" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ <script src="./js/script.js" defer></script>
+  <!-- Demo styles -->
+</head>
+
+<body>
+  <!-- Swiper -->
+   <section id="contents">
+    <div class="con2">
+      <div class="container">
+        <div class="con2_slide">
+          <div class="con2_slide1">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/ai_icon01.png" alt="x">
+                    <p>개인정보보호</p>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/ai_icon02.png" alt="x">
+                    <p>개인정보 비식별화</p>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/ai_icon03.png" alt="x">
+                    <p>AI-OCR</p>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/ai_icon04.png" alt="x">
+                    <p>AI-NER</p>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/ai_icon05.png" alt="x">
+                    <p>DLP</p><span>(정보유출방지)</span>
+                  </a>
+                </div>
+              </div>
+              <!-- con2 swiper-wrapper end -->
+              <div class="swiper-button-next"></div>
+            </div>
+            <!-- con2 swiper end -->
+          </div>
+          <!-- con2_slide1 end -->
+          <div class="con2_slide2">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#">
+                    <p class="t1">DLP <span>(정보유출방지)</span></p>
+                    <p class="t2">매체 제어, 파일 전송 차단, 출력물 보안 등을 통해 다양한 경로에서 발생할 수 있는 정보 유출을 방지합니다.</p>
+                    <p class="t3">자세히보기 <i class="fa-solid fa-arrow-right"></i></p>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <p class="t1">개인정보보호</p>
+                    <p class="t2">보유하고 있는 개인정보 및 민감정보 현황을 파악하고, 암호화·완전삭제 등 보호조치를 통해 안전하게 보호합니다.</p>
+                    <p class="t3">자세히보기 <i class="fa-solid fa-arrow-right"></i></p>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <p class="t1">개인정보 비식별화</p>
+                    <p class="t2">개인정보를 가·익명정보로 변환함으로써 가이드라인에 따라 안전하게 활용할 수 있도록 지원합니다.</p>
+                    <p class="t3">자세히보기 <i class="fa-solid fa-arrow-right"></i></p>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <p class="t1">AI-OCR</p>
+                    <p class="t2">인공지능 기술을 기반으로 이미지 파일에 포함된 개인정보 및 기밀정보를 탐지해 보호하는 기술입니다.</p>
+                    <p class="t3">자세히보기 <i class="fa-solid fa-arrow-right"></i></p>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <p class="t1">AI-NER</p>
+                    <p class="t2">인공지능 기반으로 비정형 데이터 내 개인정보를 정확하게 인식해 보호조치를 적용합니다.</p>
+                    <p class="t3">자세히보기 <i class="fa-solid fa-arrow-right"></i></p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- con2_slide2 end -->
+        </div>
+        <!-- con2_slide end -->
+          </div>
+          <!-- con2 container end -->
+        </div>
+        <!-- con2 end -->
+       
+  
+</section>
+  <!-- Initialize Swiper -->
+  <script>
+    let swiper3 = new Swiper(".con2_slide1 .mySwiper", {
+      slidesPerView: 4,
+      loop:true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+      },
+    });
+
+    let swiper4 = new Swiper(".con2_slide2 .mySwiper", {
+      slidesPerView: 1,
+      loop:true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+      },
+    });
+  </script>
+</body>
+
+</html>
